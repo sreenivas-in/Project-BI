@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Static Site</title>
+  <meta name="description" content="A clean, fast starter site for GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Welcome to My Site</h1>
+      <p class="lead">This is a minimal, fast static website starter you can deploy on GitHub Pages and connect to your own domain.</p>
+      <a class="cta" href="#" rel="nofollow">Call to Action</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h3>⚡ Fast & Simple</h3>
+        <p>No build tools required. Just edit <code>index.html</code> and push to your repo.</p>
+      </section>
+      <section class="card">
+        <h3>🔒 HTTPS by default</h3>
+        <p>Enable “Enforce HTTPS” in GitHub Pages settings once DNS is set up.</p>
+      </section>
+      <section class="card">
+        <h3>🧩 Extendable</h3>
+        <p>Add more pages, styles, or use a static site generator later if you want.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    © <span id="year"></span> • Your Name
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- style.css -->
+:root { --bg: #0b1020; --card: #111833; --text: #eaf0ff; --muted: #9fb3ff; --accent: #7c9cff; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); }
+header { padding: 3rem 1.25rem; text-align:center; }
+.wrap { max-width: 960px; margin: 0 auto; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+p.lead { font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--muted); margin: 0 auto; max-width: 42rem; }
+.cta { display: inline-block; margin-top: 1.5rem; padding: .9rem 1.2rem; border-radius: 14px; background: linear-gradient(135deg, var(--accent), #4c6fff); color: white; text-decoration: none; font-weight: 700; box-shadow: 0 10px 30px rgba(79,106,255,.35); }
+main { padding: 2rem 1.25rem 4rem; }
+.grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+.card { background: linear-gradient(180deg, var(--card), #0d1430); border: 1px solid rgba(124,156,255,.15); border-radius: 16px; padding: 1.25rem; }
+h3 { margin-top:0; font-size: 1.1rem; }
+footer { text-align:center; padding: 2rem 1.25rem; color: #b6c4ff; border-top: 1px solid rgba(124,156,255,.15); }
+a { color: #bcd0ff; }
+
+
+<!-- 404.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { display:flex; justify-content:center; align-items:center; height:100vh; text-align:center; }
+    h1 { font-size:2rem; margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>404 — Page Not Found</h1>
+    <p>Oops! The page you’re looking for doesn’t exist.</p>
+    <p><a href="/">Go back home</a></p>
+  </div>
+</body>
+</html>
+
+
+<!-- CNAME (plain text file in repo root) -->
+example.com
