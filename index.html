@@ -1,47 +1,56 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Static Site</title>
-  <meta name="description" content="A clean, fast starter site for GitHub Pages." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="wrap">
-      <h1>Welcome to My Site</h1>
-      <p class="lead">This is a minimal, fast static website starter you can deploy on GitHub Pages and connect to your own domain.</p>
-      <a class="cta" href="#" rel="nofollow">Call to Action</a>
-    </div>
-  </header>
-  <main class="wrap">
-    <div class="grid">
-      <section class="card">
-        <h3>⚡ Fast & Simple</h3>
-        <p>No build tools required. Just edit <code>index.html</code> and push to your repo.</p>
-      </section>
-      <section class="card">
-        <h3>🔒 HTTPS by default</h3>
-        <p>Enable “Enforce HTTPS” in GitHub Pages settings once DNS is set up.</p>
-      </section>
-      <section class="card">
-        <h3>🧩 Extendable</h3>
-        <p>Add more pages, styles, or use a static site generator later if you want.</p>
-      </section>
-    </div>
-  </main>
-  <footer>
-    © <span id="year"></span> • Your Name
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<ul class="kv">
+<li><span>Stack</span><strong>Power BI, Fabric, Azure</strong></li>
+<li><span>Focus</span><strong>Modeling & Performance</strong></li>
+<li><span>Format</span><strong>Engagements & Training</strong></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<div class="wrap contact-grid">
+<div>
+<h2>Let’s talk</h2>
+<p class="lead">Tell us about your model, your constraints, and what “fast” means for your team.</p>
+<ul class="list">
+<li>Free 20‑minute fit call</li>
+<li>Clear next steps in 48 hours</li>
+</ul>
+</div>
+<form class="form" netlify>
+<label>Name
+<input type="text" name="name" required>
+</label>
+<label>Email
+<input type="email" name="email" required>
+</label>
+<label>What do you need?
+<textarea name="message" rows="5"></textarea>
+</label>
+<button class="btn" type="submit">Send</button>
+</form>
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="wrap foot-grid">
+<div>
+<a class="brand small" href="#">Future<span>WIDBI</span></a>
+<p class="muted">© <span id="year"></span> FutureWIDBI • All rights reserved</p>
+</div>
+<nav class="foot-nav">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#resources">Resources</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
-
-<!-- CNAME (plain text file in repo root) -->
-POWER OF BUSINESS INTELLIGNECE 
