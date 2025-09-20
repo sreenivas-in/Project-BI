@@ -1,4 +1,91 @@
 <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FutureWIDBI — Business Intelligence, Done Elegantly</title>
+<meta name="description" content="FutureWIDBI helps teams design elegant, high-performance BI solutions with Power BI and the Microsoft Fabric stack." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAV -->
+<header class="nav">
+<div class="wrap nav-inner">
+<a class="brand" href="#">Future<span>WIDBI</span></a>
+<nav class="menu">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#resources">Resources</a>
+<a href="#contact" class="btn btn-small">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+<div class="wrap">
+<div class="hero-content">
+<h1>Elegant BI for confident decisions</h1>
+<p class="lead">We architect fast, reliable semantic models and decision-ready dashboards on <strong>Power BI</strong> & <strong>Microsoft Fabric</strong>. Less noise, more signal.</p>
+<div class="actions">
+<a class="btn" href="#contact">Start a project</a>
+<a class="btn ghost" href="#resources">See resources</a>
+</div>
+</div>
+<div class="hero-card">
+<div class="badge">Featured</div>
+<h3>Report Analyzer Toolkit</h3>
+<p>Best practices checklist & diagnostics to keep reports fast and maintainable.</p>
+<ul class="list">
+<li>Model size & performance hints</li>
+<li>Measure hygiene & lineage</li>
+<li>Visual density & readability</li>
+</ul>
+<a class="link" href="#resources">Explore resources →</a>
+</div>
+</div>
+<div class="grid-bg" aria-hidden="true"></div>
+</section>
+<!-- TRUST -->
+<span class="tag">Guide</span>
+<h3>Direct Lake: when it shines, when it stings</h3>
+<p>Practical guardrails for choosing Direct Lake vs Import vs DQ.</p>
+<a href="#" class="link">Read →</a>
+</article>
+<article>
+<span class="tag">Checklist</span>
+<h3>Processing the unprocessed: safer refresh patterns</h3>
+<p>How to avoid silent failures and keep your model consistent.</p>
+<a href="#" class="link">Read →</a>
+</article>
+<article>
+<span class="tag">How‑to</span>
+<h3>XMLA read/write: myths vs reality</h3>
+<p>Do’s and don’ts for programmatic model updates.</p>
+<a href="#" class="link">Read →</a>
+</article>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about wrap">
+<div class="about-grid">
+<div>
+<h2>Opinionated about quality</h2>
+<p>We believe elegant BI is about <strong>focus</strong>: a clean semantic layer, fast refresh, and dashboards that respect your users’ time.</p>
+<ul class="list">
+<li>Load times under 2s for common interactions</li>
+<li>Versioned, testable DAX and model metadata</li>
+<li>Documentation that ships with your repo</li>
+</ul>
+</div>
+<div class="about-card">
+<h3>Snapshot</h3>
 <ul class="kv">
 <li><span>Stack</span><strong>Power BI, Fabric, Azure</strong></li>
 <li><span>Focus</span><strong>Modeling & Performance</strong></li>
@@ -7,50 +94,40 @@
 </div>
 </div>
 </section>
-
-
 <!-- CONTACT -->
-<section id="contact" class="contact">
-<div class="wrap contact-grid">
-<div>
-<h2>Let’s talk</h2>
-<p class="lead">Tell us about your model, your constraints, and what “fast” means for your team.</p>
-<ul class="list">
-<li>Free 20‑minute fit call</li>
-<li>Clear next steps in 48 hours</li>
-</ul>
-</div>
-<form class="form" netlify>
-<label>Name
-<input type="text" name="name" required>
-</label>
-<label>Email
-<input type="email" name="email" required>
-</label>
-<label>What do you need?
-<textarea name="message" rows="5"></textarea>
-</label>
-<button class="btn" type="submit">Send</button>
-</form>
-</div>
-</section>
-
-
-<!-- FOOTER -->
-<footer class="footer">
-<div class="wrap foot-grid">
-<div>
-<a class="brand small" href="#">Future<span>WIDBI</span></a>
-<p class="muted">© <span id="year"></span> FutureWIDBI • All rights reserved</p>
-</div>
-<nav class="foot-nav">
-<a href="#about">About</a>
-<a href="#services">Services</a>
 <a href="#resources">Resources</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
+
+
+
+# File: style.css
+/* (all styles separated, same as before) */
+
+
+
+
+# File: 404.html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page Not Found — FutureWIDBI</title>
+<link rel="stylesheet" href="style.css">
+<style>body{display:flex;justify-content:center;align-items:center;min-height:100vh;text-align:center}</style>
+</head>
+<body>
+<main>
+<h1>404 — Page Not Found</h1>
+<p class="lead">The page you’re looking for doesn’t exist or was moved.</p>
+<p><a class="link" href="/">Go back home</a></p>
+</main>
 </body>
 </html>
